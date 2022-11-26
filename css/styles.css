@@ -3,6 +3,10 @@
   --primary-text-color: #2E2F42;
   --paragraf-text-color: #434455;
   --decoration-color-effects: #9747FF;
+  --hover-effect-color: #4D5AE5;
+  --backgrounds-color: #F4F4FD;
+  --section-background-color: #E5E5E5;
+  --footer-p-color: #E7E9FC;
 }
 
 body {
@@ -24,14 +28,14 @@ a {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 700;  /*600*/
   font-size: 36px;
   line-height: 1.11;  /* 40px; */
   color: var(--primary-text-color);
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 700;  /*600*/
   font-size: 20px;
   line-height: 1.2;  /* 24px; */
   color: var(--primary-text-color);
@@ -60,10 +64,10 @@ h1:hover, h2:hover, h3:hover, p:hover {
 }
 
 .logo-part1 {
-  color: #4D5AE5;
+  color: var(--hover-effect-color);
 }
 
-.logo-part2 { 
+.logo-part2 {  
   color: var(--primary-text-color);
 }
 
@@ -78,7 +82,7 @@ h1:hover, h2:hover, h3:hover, p:hover {
 .navigation-link:focus, .address-header:focus {
   text-decoration-line:underline;
   text-decoration-color: var(--decoration-color-effects);
-  color: #4D5AE5;
+  color: var(--hover-effect-color);
 }
 
 .address-header {
@@ -94,30 +98,32 @@ h1:hover, h2:hover, h3:hover, p:hover {
 }
 
 .peculiarities, .service, .portfolio-main {
-  background-color: #E5E5E5;
+  background-color: var(--section-background-color);
 }
 
 /* for "Main Page" page */
 .filter-button {
-  background-color: #F4F4FD;
+  font-family: inherit;
+  background-color: var(--backgrounds-color);
   cursor: pointer;
 }
 
 .filter-button:hover, .filter-button:focus {
-  background-color: #4D5AE5; 
-  color: #FFFFFF;
+  background-color: var(--hover-effect-color); 
+  color: var(--primary-color);
 }
 
 .team-cards {
-  background-color: #F4F4FD;
+  background-color: var(--backgrounds-color);
 }
 
+/* for footer */
 .footer .logo-part2 {
-  color: #F4F4FD;
+  color: var(--backgrounds-color);
 }
 
 .footer p {
-  color: #E7E9FC;
+  color: var(--footer-p-color);
 }
 
 /* for "Portfolio" page*/
@@ -125,4 +131,6 @@ h1:hover, h2:hover, h3:hover, p:hover {
   color: var(--primary-text-color);
 }
 
-
+.footer .logo-part2 {
+  Line-height: 21.13px;
+}
