@@ -91,8 +91,6 @@ a {
 .logo-part1:focus,
 .logo-part1:focus,
 .address-header:focus {
-  /* text-decoration-line:underline;
-  text-decoration-color: var(--decoration-color-effects); */
   color: var(--hover-effect-color);
 }
 
@@ -144,11 +142,6 @@ a {
   color: var(--primary-color);
 }
 
-/* .hero .filter-button:hover,
-.hero .filter-button:focus {
-  background-color: var(--botton-background-color);
-} */
-
 .hero .filter-button:active {
   background-color: var(--botton-background-color);
 }
@@ -160,11 +153,6 @@ a {
 .card {
   background-color: var(--primary-color);
 }
-
-/* .list-header {
-  font-size: 20px;
-  line-height: 1.2; /* 24px */
-/*} */
 
 .paragraph-text,
 .text-explanation {
