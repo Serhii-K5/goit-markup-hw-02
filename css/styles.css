@@ -8,12 +8,14 @@
   --botton-hover-color: #4d5ae5;
   --footer-p-color: #e7e9fc;
   --second-font-weight: 500;
+  --header-font-weight: 700;
 }
 
 body {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-size: 16px;
+  letter-spacing: 0.02em;
   background-color: var(--primary-color);
 }
 
@@ -40,16 +42,16 @@ a {
 }
 
 .header-section {
-  font-weight: var(--second-font-weight); /* 600 */
+  font-weight: var(--header-font-weight);
   font-size: 36px;
-  line-height: 1.11; /* 40px; */
+  line-height: 1.11;
   color: var(--primary-text-color);
 }
 
 .list-header {
-  font-weight: var(--second-font-weight); /* 600 */
+  font-weight: var(--header-font-weight);
   font-size: 20px;
-  line-height: 1.2; /* 24px; */
+  line-height: 1.2;
   color: var(--primary-text-color);
 }
 
@@ -68,6 +70,7 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  letter-spacing: 0.03em;
   text-decoration-line: none;
 }
 
@@ -80,9 +83,10 @@ a {
 }
 
 .navigation-link {
-  font-weight: var(--second-font-weight); /* 600 */
+  font-weight: var(--second-font-weight);
   color: var(--primary-text-color);
   text-decoration-line: none;
+  line-height: 1.5;
 }
 
 .logo-part1:hover,
@@ -105,6 +109,7 @@ a {
 
 .address-header {
   color: var(--second-text-color);
+  line-height: 1.5;
 }
 
 .hero,
@@ -113,9 +118,9 @@ a {
 }
 
 .site-theme {
-  font-weight: var(--second-font-weight); /* 600 */
+  font-weight: var(--header-font-weight);
   font-size: 56px;
-  line-height: 1.07; /* 60px */
+  line-height: 1.07;
   color: var(--primary-color);
 }
 
@@ -128,24 +133,33 @@ a {
 /* for "Main Page" page */
 .filter-button {
   font-family: inherit;
-  font-weight: var(--second-font-weight); /* 600 */
+  font-weight: var(--second-font-weight);
   font-size: 16px;
-  line-height: 1.5; /* 24px */
+  line-height: 1.5;
   background-color: var(--backgrounds-color);
   color: var(--botton-hover-color);
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
 
 .hero .filter-button {
-  line-height: 1.17; /* 18.75px */
+  line-height: 1.17;
   background-color: var(--hover-effect-color);
   color: var(--primary-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero .filter-button:hover,
-.hero .filter-button:focus,
+.hero .filter-button:focus {
+  background-color: var(--botton-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .hero .filter-button:active {
   background-color: var(--botton-background-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .team-cards {
@@ -159,7 +173,7 @@ a {
 .paragraph-text,
 .text-explanation {
   font-size: 16px;
-  line-height: 1.5; /* 24px */
+  line-height: 1.5;
   color: var(--primary-text-color);
 }
 
@@ -178,7 +192,7 @@ a {
 
 .footer .logo-part1,
 .footer .logo-part2 {
-  line-height: 1.174px; /* 21.13px; */
+  line-height: 1.174px;
 }
 
 /* for "Portfolio" page*/
@@ -190,4 +204,7 @@ a {
 .portfolio-main .filter-button:focus {
   background-color: var(--botton-hover-color);
   color: var(--primary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
