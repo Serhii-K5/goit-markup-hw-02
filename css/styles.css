@@ -7,12 +7,12 @@
   --botton-background-color: #404bbf;
   --botton-hover-color: #4d5ae5;
   --footer-p-color: #e7e9fc;
+  --second-font-weight: 500;
 }
 
 body {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   background-color: var(--primary-color);
 }
@@ -40,21 +40,20 @@ a {
 }
 
 .header-section {
-  font-weight: 700; /*600*/
+  font-weight: var(--second-font-weight); /* 600 */
   font-size: 36px;
   line-height: 1.11; /* 40px; */
   color: var(--primary-text-color);
 }
 
 .list-header {
-  font-weight: 700; /* 600 */
+  font-weight: var(--second-font-weight); /* 600 */
   font-size: 20px;
   line-height: 1.2; /* 24px; */
   color: var(--primary-text-color);
 }
 
 .paragraph-text {
-  font-weight: 400;
   color: var(--second-text-color);
 }
 
@@ -81,6 +80,7 @@ a {
 }
 
 .navigation-link {
+  font-weight: var(--second-font-weight); /* 600 */
   color: var(--primary-text-color);
   text-decoration-line: none;
 }
@@ -104,7 +104,6 @@ a {
 }
 
 .address-header {
-  font-weight: 400;
   color: var(--second-text-color);
 }
 
@@ -114,6 +113,7 @@ a {
 }
 
 .site-theme {
+  font-weight: var(--second-font-weight); /* 600 */
   font-size: 56px;
   line-height: 1.07; /* 60px */
   color: var(--primary-color);
@@ -128,7 +128,7 @@ a {
 /* for "Main Page" page */
 .filter-button {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: var(--second-font-weight); /* 600 */
   font-size: 16px;
   line-height: 1.5; /* 24px */
   background-color: var(--backgrounds-color);
@@ -142,6 +142,8 @@ a {
   color: var(--primary-color);
 }
 
+.hero .filter-button:hover,
+.hero .filter-button:focus,
 .hero .filter-button:active {
   background-color: var(--botton-background-color);
 }
@@ -156,7 +158,6 @@ a {
 
 .paragraph-text,
 .text-explanation {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5; /* 24px */
   color: var(--primary-text-color);
